@@ -6,6 +6,13 @@ Live: https://varveroglouvasileios.github.io/HotelProject/
 
 Vue 3 + TypeScript + Tailwind + vue-i18n. Greek (default) and English. Mobile first. Photos are AI-generated and illustrative. There is no backend: bookings are simulated and stored in the browser's `localStorage`.
 
+## Try it in two minutes
+
+1. Open the live demo and pick dates about a month ahead, 2 guests, then **Check availability**.
+2. Choose a room and complete the booking form. You get a reference code and an email preview.
+3. Open **Admin** (password `demo`) and see your booking in the 28-day occupancy grid. You can cancel it there.
+4. To see a sold-out room, search for the days about two weeks from today: the Sea View Suite disappears because both units are booked.
+
 ## What it shows
 
 - Date and guest search with validation (past dates, order, minimum stay, guests).
