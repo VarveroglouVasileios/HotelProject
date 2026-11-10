@@ -5,7 +5,8 @@ import Icon from '@/components/Icon.vue'
 import Lightbox from '@/components/Lightbox.vue'
 import RoomCard from '@/components/RoomCard.vue'
 import SearchBar from '@/components/SearchBar.vue'
-import { dayParts, distances, faqs, gallery } from '@/data/content'
+import FaqSection from '@/components/FaqSection.vue'
+import { dayParts, distances, gallery } from '@/data/content'
 import { rooms } from '@/data/rooms'
 
 const { t, locale } = useI18n()
@@ -140,24 +141,7 @@ const lightboxItems = computed(() =>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="wrap mt-28 md:mt-36">
-      <div class="grid gap-10 lg:grid-cols-12 lg:gap-16">
-        <div v-reveal class="lg:col-span-4">
-          <p class="text-base font-medium text-clay-600">{{ t('home2.faqKicker') }}</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl">{{ t('home2.faqTitle') }}</h2>
-        </div>
-        <div class="lg:col-span-8">
-          <details v-for="f in faqs" :key="f.q.en" class="group border-b border-rule py-5 first:border-t">
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-6 font-serif text-xl marker:hidden">
-              {{ f.q[lang] }}
-              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-rule text-lg transition-transform group-open:rotate-45" aria-hidden="true">+</span>
-            </summary>
-            <p class="mt-3 max-w-2xl text-ink-soft">{{ f.a[lang] }}</p>
-          </details>
-        </div>
-      </div>
-    </section>
+    <FaqSection />
 
     <!-- Closing call to action -->
     <section class="relative isolate mt-28 overflow-hidden text-white md:mt-36">
