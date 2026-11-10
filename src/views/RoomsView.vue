@@ -54,12 +54,11 @@ const nights = computed(() => (searched.value ? nightsBetween(stay.value.checkIn
       {{ t('rooms.none') }}
     </p>
 
-    <div class="mt-10 space-y-14 md:space-y-20">
+    <div class="mt-10 grid gap-x-10 gap-y-16 md:grid-cols-2">
       <RoomCard
-        v-for="(r, i) in visible"
+        v-for="r in visible"
         :key="r.room.id"
         :room="r.room"
-        :flip="i % 2 === 1"
         :nights="r.nights"
         :total="r.total"
         :left="r.left"

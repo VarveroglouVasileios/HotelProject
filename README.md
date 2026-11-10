@@ -15,6 +15,8 @@ Vue 3 + TypeScript + Tailwind + vue-i18n. Greek (default) and English. Mobile fi
 
 ## What it shows
 
+- A full-bleed home page: story, rooms, a day at the hotel, photo gallery with lightbox, location, FAQ.
+- A page for every room with gallery, amenities and an instant availability and price check.
 - Date and guest search with validation (past dates, order, minimum stay, guests).
 - Live availability per room type. A type has several units, and a sold-out night hides the room.
 - Season pricing: shoulder June, September and early July; peak 15 Jul to 31 Aug (3-night minimum).
@@ -35,7 +37,8 @@ src/lib/booking.ts   dates, pricing, availability, validation (tested)
 src/lib/store.ts     localStorage-backed bookings and seed data
 src/data/rooms.ts    fictional rooms and prices
 src/i18n.ts          Greek and English copy
-src/views/           Home, Rooms, Book, Confirmation, Admin
+src/views/           Home, Rooms, RoomDetail, Book, Confirmation, Admin
+src/data/content.ts  gallery, day parts, FAQ, distances (Greek and English)
 ```
 
 ## What a real client build adds

@@ -12,6 +12,7 @@ export default {
       },
       fontFamily: {
         serif: ['Literata', 'Georgia', 'Times New Roman', 'serif'],
+        sans: ['"Source Sans 3"', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
       },
     },
   },

@@ -1,6 +1,7 @@
 import { createI18n } from 'vue-i18n'
+import { extra } from './i18n-extra'
 
-const messages = {
+const baseMessages = {
   el: {
     brand: 'Elia Bay Suites',
     demo: {
@@ -50,6 +51,8 @@ const messages = {
       none: 'Δεν υπάρχει διαθεσιμότητα για αυτές τις ημερομηνίες. Δοκιμάστε άλλες ημερομηνίες ή λιγότερους επισκέπτες.',
       perNight: 'από {price}€ τη βραδιά',
       forNights: 'για {nights} βράδια',
+      from: 'από',
+      perNightShort: 'τη βραδιά',
       total: 'Σύνολο {total}€ για {nights} βράδια',
       left: 'Απομένουν {n}',
       lastOne: 'Τελευταίο διαθέσιμο',
@@ -164,6 +167,8 @@ const messages = {
       none: 'No availability for these dates. Try other dates or fewer guests.',
       perNight: 'from {price}€ a night',
       forNights: 'for {nights} nights',
+      from: 'from',
+      perNightShort: 'a night',
       total: 'Total {total}€ for {nights} nights',
       left: '{n} left',
       lastOne: 'Last one available',
@@ -229,6 +234,21 @@ const messages = {
       hours: 'Daily 8:00–22:00',
     },
   },
+}
+
+type Tree = { [key: string]: string | Tree }
+const deepMerge = (a: Tree, b: Tree): Tree => {
+  const out: Tree = { ...a }
+  for (const [key, value] of Object.entries(b)) {
+    const current = out[key]
+    out[key] = typeof value === 'object' && typeof current === 'object' ? deepMerge(current, value) : value
+  }
+  return out
+}
+
+const messages = {
+  el: deepMerge(baseMessages.el as Tree, extra.el as Tree),
+  en: deepMerge(baseMessages.en as Tree, extra.en as Tree),
 }
 
 const stored = (() => {

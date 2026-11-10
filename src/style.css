@@ -18,3 +18,13 @@
   .field-error { @apply mt-1 text-sm text-clay-600; }
   .wrap { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
 }
+
+/* Scroll reveal (see lib/reveal.ts). Disabled for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal-in { opacity: 1; transform: none; }
+}
+
+@layer utilities {
+  .text-shadow-soft { text-shadow: 0 1px 24px rgb(0 0 0 / 0.35); }
+}
