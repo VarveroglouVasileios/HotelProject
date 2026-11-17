@@ -4,15 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        paper: { DEFAULT: '#f6f1e8', dark: '#ece4d6' },
-        ink: { DEFAULT: '#26211c', soft: '#5b5249' },
-        rule: '#d9cfbf',
-        sea: { 600: '#1d4f63', 700: '#163f50' },
-        clay: { 500: '#b4553a', 600: '#9b4630' },
+        paper: { DEFAULT: '#f1f3f0', dark: '#e2e8e4' },
+        ink: { DEFAULT: '#10252b', soft: '#44585c' },
+        rule: '#c8d3cf',
+        sea: { 600: '#0f3f4d', 700: '#0a2f3a' },
+        clay: { 500: '#a9803b', 600: '#7d5a1c' },
       },
       fontFamily: {
-        serif: ['Literata', 'Georgia', 'Times New Roman', 'serif'],
-        sans: ['"Source Sans 3"', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        serif: ['"Cormorant Garamond"', 'Georgia', 'Times New Roman', 'serif'],
+        sans: ['Jost', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
       },
     },
   },

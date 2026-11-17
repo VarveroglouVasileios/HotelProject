@@ -24,7 +24,7 @@ const lightboxItems = computed(() =>
   <div>
     <!-- Hero -->
     <section class="relative isolate flex min-h-[92vh] items-end overflow-hidden text-white">
-      <img :src="img('hero-bay')" alt="" width="1024" height="576" class="absolute inset-0 -z-20 h-full w-full object-cover" />
+      <img :src="img('hero-bay')" alt="" width="1024" height="576" class="kenburns absolute inset-0 -z-20 h-full w-full object-cover" />
       <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/70 via-black/10 to-black/25" />
       <div class="wrap pb-32 pt-40 sm:pb-40">
         <p class="text-shadow-soft text-base font-medium tracking-wide text-white/90">{{ t('home2.eyebrow') }}</p>

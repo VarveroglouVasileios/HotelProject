@@ -5,7 +5,8 @@
 @layer base {
   html { @apply scroll-smooth antialiased; -webkit-text-size-adjust: 100%; }
   body { @apply bg-paper text-ink text-[17px] leading-relaxed; }
-  h1, h2, h3 { @apply font-serif font-medium tracking-tight text-ink; text-wrap: balance; }
+  h1, h2, h3 { @apply font-serif font-semibold tracking-tight text-ink; text-wrap: balance; }
+  h1 { letter-spacing: -0.02em; line-height: 1.02; }
   img { @apply max-w-full; }
   :focus-visible { @apply outline-2 outline-offset-2 outline-sea-600; }
 }
@@ -27,4 +28,12 @@
 
 @layer utilities {
   .text-shadow-soft { text-shadow: 0 1px 24px rgb(0 0 0 / 0.35); }
+}
+
+/* Slow zoom on the hero photo, off for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .kenburns { animation: kenburns 24s ease-in-out infinite alternate; transform-origin: 60% 40%; }
+  @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.09); } }
+  .btn { transition: transform .25s ease, background-color .25s ease; }
+  .btn:hover { transform: translateY(-2px); }
 }
