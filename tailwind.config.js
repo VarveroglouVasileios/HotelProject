@@ -11,8 +11,8 @@ export default {
         clay: { 500: '#a9803b', 600: '#7d5a1c' },
       },
       fontFamily: {
-        serif: ['"Cormorant Garamond"', 'Georgia', 'Times New Roman', 'serif'],
-        sans: ['Jost', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        serif: ['"Noto Serif Display"', 'Georgia', 'Times New Roman', 'serif'],
+        sans: ['Commissioner', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
       },
     },
   },
