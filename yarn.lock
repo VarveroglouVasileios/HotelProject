@@ -292,6 +292,16 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.28.2.tgz#b21affb804cc167c133d95f45b3a1dc1323b9a87"
   integrity sha512-5ebpxr3nWMzrL/rnUI755Jkuee0bHL/Gq0WTF9lvcpv73wAp5eu8MfBUgWK9bhWvZjj7yX8etf/8tI8Ney695g==
 
+"@fontsource-variable/commissioner@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/commissioner/-/commissioner-5.3.0.tgz#5cdd05825d471578fdc5ee8bacca5f3308b4ba63"
+  integrity sha512-0IEvi8SO1slc5Pc9tA4OtA01I8UiCcEq/uh12oNjfHuABU9Lnz61l2V8o2cMPUUo3BAo5MbISVK2I/DSpBRw7Q==
+
+"@fontsource/noto-serif-display@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-serif-display/-/noto-serif-display-5.3.0.tgz#44f5f9c69b6366917319423419f7c49e4b791947"
+  integrity sha512-iVZR/eTQSfko9H0wZ0f+ogY5JSSH464nsRc7DZcsN0Kx7Qe41yg1IrQWILhe1dScyREMXceO+h+ar2kK9Wer8A==
+
 "@intlify/core-base@11.4.18":
   version "11.4.18"
   resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-11.4.18.tgz#007690089a5298851e8b217f6fcd64b254baf08d"

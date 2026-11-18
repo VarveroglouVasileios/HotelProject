@@ -89,6 +89,7 @@ const links = computed(() => [
         <div class="text-sm text-paper/60">
           <p>{{ t('demo.by') }}</p>
           <p class="mt-1">{{ t('demo.ai') }}</p>
+          <p class="mt-3"><RouterLink to="/privacy" class="inline-flex min-h-[44px] items-center underline underline-offset-4">{{ locale === 'en' ? 'Privacy and cookies' : 'Απόρρητο και cookies' }}</RouterLink></p>
         </div>
       </div>
     </footer>

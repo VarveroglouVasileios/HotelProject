@@ -12,7 +12,7 @@ export default {
       },
       fontFamily: {
         serif: ['"Noto Serif Display"', 'Georgia', 'Times New Roman', 'serif'],
-        sans: ['Commissioner', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        sans: ['"Commissioner Variable"', 'Commissioner', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
       },
     },
   },
